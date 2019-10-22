@@ -12,7 +12,7 @@ gem 'cancancan'
 gem 'pry-rails' #for rails c
 gem 'better_errors', group: :development
 gem 'binding_of_caller' #works with better errors to see 
-                        #instance variable values    
+                        #instance variable values                            
 ################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
