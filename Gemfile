@@ -7,7 +7,8 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'devise'
-gem 'paperclip'  # Mac only or gem 'carrierwave' for PC or Mac
+gem 'carrierwave'
+#gem 'paperclip'  # Mac only or gem 'carrierwave' for PC or Mac
 gem 'cancancan'
 gem 'pry-rails' #for rails c
 gem 'better_errors', group: :development

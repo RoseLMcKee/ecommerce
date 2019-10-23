@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
-	mount_uplouder :image, ImageUploader
+	mount_uploader :image, ImageUploader
+
 	belongs_to :category 
 end
