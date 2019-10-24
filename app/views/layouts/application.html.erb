@@ -36,6 +36,7 @@
        
 
        <ul class="nav navbar-nav">
+             <li><%= link_to "View Cart", view_order_path %></li>
            <% if user_signed_in? %>
          <li><% link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %> </li>
          <li class="dropdown">
