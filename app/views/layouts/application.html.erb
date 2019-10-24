@@ -12,22 +12,30 @@
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
-      <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav">
                <li class="dropdown">
-       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-             <ul class="nav navbar-nav">
-               <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
             <ul class="dropdown-menu">
-               <% @categories.each do |category| %>
-                 <li><%= link_to category.name, categorical_path(category_id: category.id) %></li>
+                <% @categories.each do |category| %>
+               <li><%= link_to category.name, categorical_path(category_id: category.id) %></li>
+               <% end %>
+             </ul>
+           </li>
+       
+
+            <ul class="nav navbar-nav">       
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Brands <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+               <% @brands.each do |brand| %>
+                 <li><%= link_to brand, branding_path(brand: brand) %></li>
                <% end %>
              </ul>
            </li>
            </ul>
        
 
-       <ul class="nav navbar-nav navbar-right">
+       <ul class="nav navbar-nav">
            <% if user_signed_in? %>
          <li><% link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %> </li>
          <li class="dropdown">
