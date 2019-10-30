@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'categorical' => 'storefronts#items_by_category'
   get 'branding' => 'storefronts#items_by_brand'
-  
+  post 'order_complete' => 'cart#order_complete'
   root 'storefronts#all_item'
   resources :categories
   resources :products
