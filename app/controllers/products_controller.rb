@@ -16,7 +16,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    authorize! :create, @product
+    #authorize! :create, product
     @product = Product.new
     @categories = Category.all
   end
