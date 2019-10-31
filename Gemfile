@@ -54,13 +54,13 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'sqlite3'
+  #gem 'sqlite3'
 end
 # Use sqlite3 as the database for Active Record
 
 #for Heroku
 group :production do
-  #gem 'pg', '>=1.1.4' #postgres database
+  gem 'pg'
   gem 'rails_12factor'
 end  
 group :development do
