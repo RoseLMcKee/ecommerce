@@ -60,7 +60,7 @@ end
 
 #for Heroku
 group :production do
-  gem 'pg', '>=1.1.4' #postgres database
+  #gem 'pg', '>=1.1.4' #postgres database
   gem 'rails_12factor'
 end  
 group :development do
